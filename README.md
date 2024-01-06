@@ -1,2 +1,2 @@
-# calculator
-https://www.theodinproject.com/lessons/foundations-calculator
+live:
+https://thisisshiki.github.io/calculator/
