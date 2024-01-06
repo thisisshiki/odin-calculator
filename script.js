@@ -5,10 +5,10 @@ let shouldResetScreen = false
 
 const numberButtons = document.querySelectorAll('[data-number]')
 const operatorButtons = document.querySelectorAll('[data-operator]')
-const equalsButton = document.getElementById('equalsBtn')
-const clearButton = document.getElementById('clearBtn')
-const deleteButton = document.getElementById('deleteBtn')
-const pointButton = document.getElementById('pointBtn')
+const equalsButton = document.getElementById('btn--equal')
+const clearButton = document.getElementById('btn--clear')
+const deleteButton = document.getElementById('btn--del')
+const pointButton = document.getElementById('btn--point')
 const lastOperationScreen = document.getElementById('previous-operand')
 const currentOperationScreen = document.getElementById('current-operand')
 
@@ -97,8 +97,8 @@ function handleKeyboardInput(e) {
 
 function convertOperator(keyboardOperator) {
   if (keyboardOperator === '/') return '÷'
-  if (keyboardOperator === '*') return '×'
-  if (keyboardOperator === '-') return '−'
+  if (keyboardOperator === '*') return 'x'
+  if (keyboardOperator === '-') return '-'
   if (keyboardOperator === '+') return '+'
 }
 
@@ -124,9 +124,9 @@ function operate(operator, a, b) {
   switch (operator) {
     case '+':
       return add(a, b)
-    case '−':
+    case '-':
       return substract(a, b)
-    case '×':
+    case 'x':
       return multiply(a, b)
     case '÷':
       if (b === 0) return null

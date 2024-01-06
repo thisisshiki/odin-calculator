@@ -48,28 +48,28 @@ body {
     word-break: break-all;
 }
 
-.output .previous-operand {
+.output #previous-operand {
     color: rgba(0, 0, 0, 0.75);
     font-size: 1.5rem;
 }
 
-.output .current-operand {
+.output #current-operand {
     color: rgba(0, 0, 0, 0.75);
     font-size: 2.5rem;
 }
 
-.btn--clear {
+#btn--clear {
     color: #f0595f;
 }
 
-.btn--del {
+#btn--del {
     color: #b1686a;
 }
 
-#equalsBtn {
+#btn--equal {
     background-color: #a8c7d0;
 }
 
-#equalsBtn:hover {
+#btn--equal:hover {
     background-color: #85a4b2;
 }
